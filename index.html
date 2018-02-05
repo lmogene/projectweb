@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>99 verhalen</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="styles/font.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/translogo.png" alt="logo"></a>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="signup.html"><img src="images/wishlist.png" height="32" width="32" class="lijst" alt="leeslijst">
+                    </a>
+                </li>
+                <li>
+                    <a href="inlog.html"><img src="images/iconsuser.png" height="32" width="32" alt="account"></a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <h2>Verhalen voor onderweg en op bestemming!</h2>
+
+        <form class="zoekform">
+            <input type="text" id="zoek" placeholder="Zoeken">
+            <input type="submit" value="Ga" id="submit">
+        </form>
+    </header>
+
+    <main>
+        <button id="filter">
+            Filter
+        </button>
+
+        <form id="showfilter" class="toggle" action="">
+            <fieldset>
+                <legend>Thema's</legend>
+                <label><input type="checkbox" name="Comedy">Comedy</label>
+                <label><input type="checkbox" name="Drama">Drama</label>
+                <label><input type="checkbox" name="Avontuur">Avontuur</label>
+                <label><input type="checkbox" name="Spanning">Sci-fi</label>
+                <label><input type="checkbox" name="Somber">Romantiek</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Leesduur</legend>
+                <label><input type="checkbox" name="5 minuten">5 minuten</label>
+                <label><input type="checkbox" name="10 minuten">10 minuten</label>
+                <label><input type="checkbox" name="15 minuten">15 minuten</label>
+                <label><input type="checkbox" name="20 minuten">20 minuten</label>
+                <label><input type="checkbox" name="30 minuten">30 minuten</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Beoordeling</legend>
+                <label><input type="checkbox" name="1 ster">&#9733;</label>
+                <label><input type="checkbox" name="2 sterren">&#9733; &#9733;</label>
+                <label><input type="checkbox" name="3 sterren">&#9733; &#9733; &#9733;</label>
+                <label><input type="checkbox" name="4 sterren">&#9733; &#9733; &#9733; &#9733;</label>
+                <label><input type="checkbox" name="5 sterren">&#9733; &#9733; &#9733; &#9733; &#9733;</label>
+            </fieldset>
+
+            <button type="submit" formaction="resultaat.html">OK</button>
+
+        </form>
+
+
+        <h1>Overzicht van 99 verhalen</h1>
+
+        <form>
+            <select name="type" id="sorteren">
+            <option value="Nieuwste">Nieuw</option>
+            <option value="Oudste">Ouder</option>
+            <option value="Populair">Populair</option>
+        </select>
+        </form>
+
+        <section>
+            <article>
+                <h2>De verwarde man - 10min</h2>
+                <!--https://unsplash.com/@cathalmacan-->
+                <img src="images/cathal-mac-an-bheatha-221498.jpg" alt="man">
+                <button type="button" class="icon-forward"><a href="storyone.html">Lees verder</a></button>
+                <img src="images/icons8-downloadw.png" alt="download" class="load">
+                <img src="images/icons8-visible.png" alt="preview">
+                <img src="images/icons8-like.png" alt="like" class="hart">
+
+            </article>
+
+            <article>
+                <h2>Paranoia - 10min</h2>
+                <!--https://unsplash.com/@armedshutter-->
+                <img src="images/ayo-ogunseinde-202302.jpg" alt="para">
+                <button type="button" class="icon-forward"><a href="storytwo.html">Lees verder</a></button>
+                <img src="images/icons8-downloadw.png" alt="download" class="load">
+                <img src="images/icons8-visible.png" alt="preview">
+                <img src="images/icons8-like.png" alt="like" class="hart">
+
+            </article>
+
+            <article>
+                <h2>Droom - 10min</h2>
+                <!--https://unsplash.com/@organicdesignco-->
+                <img src="images/megan-hodges-96121.jpg" alt="droom">
+                <button type="button" class="icon-forward"><a href="storythree.html">Lees verder</a></button>
+                <img src="images/icons8-downloadw.png" alt="download" class="load">
+                <img src="images/icons8-visible.png" alt="preview">
+                <img src="images/icons8-like.png" alt="like" class="hart">
+
+            </article>
+
+            <article>
+                <h2>Lepra - 10min</h2>
+                <!--https://unsplash.com/@wooozxh-->
+                <img src="images/wooozxh-296121.jpg" alt="lepra">
+                <button type="button" class="icon-forward">Lees verder</button>
+                <img src="images/icons8-downloadw.png" alt="download" class="load">
+                <img src="images/icons8-visible.png" alt="preview">
+                <img src="images/icons8-like.png" alt="like" class="hart">
+
+            </article>
+
+            <article>
+                <h2>Zoon - 10min</h2>
+                <!--https://unsplash.com/@lesanderson-->
+                <img src="images/les-anderson-203926.jpg" alt="zoon">
+                <button type="button" class="icon-forward">Lees verder</button>
+                <img src="images/icons8-downloadw.png" alt="download" class="load">
+                <img src="images/icons8-visible.png" alt="preview">
+                <img src="images/icons8-like.png" alt="like" class="hart">
+
+            </article>
+
+            <article>
+                <h2>Bejaard - 10min</h2>
+                <!--https://unsplash.com/@goian-->
+                <img src="images/ian-schneider-95541.jpg" alt="bejaard">
+                <button type="button" class="icon-forward">Lees verder</button>
+                <img src="images/icons8-downloadw.png" alt="download" class="load">
+                <img src="images/icons8-visible.png" alt="preview">
+                <img src="images/icons8-like.png" alt="like" class="hart">
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <img src="images/99verhalen.png" alt="logo">
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

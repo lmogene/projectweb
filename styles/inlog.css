@@ -1,0 +1,208 @@
+/*
+=========================
+    generic style bron:https://codepen.io/joostf
+=========================
+*/
+* {
+  box-sizing:border-box;
+}
+html {
+  font-family: "Nexa bold", sans-serif;
+  font-size: 1.4em;
+  padding:0;
+  margin:0;
+}
+body {
+  font-size: 1.5em;
+  padding:0;
+  margin:0;
+}
+form {
+  display:flex;
+  flex-direction:column;
+  transition: all .5s;
+  padding:1em;
+  transition: all .5s;
+  padding:1em;
+  margin-top: 3.5em;
+  border-right: 4px;
+
+}
+form:invalid {
+  background: white;
+
+}
+fieldset {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-bottom: 1em;
+  border:none;
+  transition: all .2s;
+  padding:1em;
+  background: #00d66c;
+}
+fieldset p {
+  display:block;
+  color: White;
+  background:SeaGreen;
+  padding:.25em;
+
+}
+fieldset:invalid {
+  background: white;
+  opacity: .6;
+}
+fieldset:invalid p {
+  display:none;
+}
+legend {
+  font-weight:bold;
+}
+input {
+  border-color:#2800a0;
+  border-radius: 5px;
+  padding:.25em;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  width:100%;
+  transition:all .2s;
+  z-index:2;
+}
+input:valid {
+  border-color:#00d66c;
+}
+input:invalid {
+  border-color:MediumVioletRed;
+  background: LightPink;
+}
+input:focus {
+  transform: scale(1.01, 1.01);
+}
+input:focus  {
+  display:block;
+  opacity:1;
+  margin-top:-1.3em;
+}
+
+input:disabled {
+  border-color:#eee;
+  background-color: #f9f9f9;
+}
+input::placeholder {
+  color:rgba(0,0,0,.25);
+  font-style:italic;
+}
+button {
+padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-radius: 20px;
+    background-color: #ff3268;
+    color: white;
+    font-family: "Nexa bold", sans-serif;
+    font-size: 1em;
+    margin: 2em 0em 1em 0em;
+    border: none;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    max-width: 10em;
+}
+
+}
+form:valid button {
+  opacity:1
+}
+
+.tooltip {
+  z-index:1;
+  color:DodgerBlue;
+  padding:.25em;
+  background:AliceBlue;
+  border: 1px solid currentColor;
+  font-style:italic;
+  transition:all .2s;
+  margin-top:-3em;
+  opacity:0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    background-color: #293034;
+    background-image: url(../images/andre-benz-280847.jpg);
+    background-repeat: no-repeat;
+    background-size: 40em;
+}
+
+/*
+=========================
+   LOGO
+=========================
+*/
+
+
+/*
+=========================
+   MEDIA QUERIES: background
+=========================
+*/
+
+@media(min-width:60em) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: small;
+        background-color: #293034;
+        background-image: url(../images/andre-benz-280847.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media(min-width:30em) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: small;
+        background-color: #293034;
+        background-image: url(../images/andre-benz-280847.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/*
+=========================
+   MEDIA QUERIES: form
+=========================
+*/
+
+@media (min-width: 40em) {
+    form {
+        margin:  3.5em 5em 0 5em;
+    }
+}
+
+@media (min-width: 50em) {
+    form {
+        margin: 3.5em 10em 0 10em;
+    }
+}
+
+@media (min-width: 60em) {
+    form {
+        margin: 3.5em 20em 0 20em;
+    }
+}
+
+@media (min-width: 71em) {
+    form {
+        margin: 3.5em 30em 0 30em;
+    }
+}
+
+

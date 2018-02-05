@@ -1,0 +1,508 @@
+/*
+=========================
+    generic style
+=========================
+*/
+
+* {
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 0;
+}
+
+
+/*
+=========================
+    header
+=========================
+*/
+
+
+/*--NAVIGATION-----*/
+
+nav {
+    position: fixed;
+    background-color: white;
+    margin-right: 10em;
+
+}
+
+ul {
+  list-style: none;
+  margin-bottom: -8em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  position: relative;
+  bottom:  5em;
+  left: 5.2em;
+
+
+}
+
+ul a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+
+
+/*--header background-----https://unsplash.com/@javiercanada
+*/
+
+header {
+    height: 19em;
+    width: 100%;
+    background-image: url(../images/javier-canada-300092.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0em 2.1em;
+}
+
+a>img {
+    max-width: 15em;
+    margin-left: .5em;
+}
+
+header > h2 {
+    font-family: "Nexa bold", sans-serif;
+    color: #00d66c;
+    background-color: white;
+    opacity: .9;
+    margin-left: 1em;
+    margin-right: 3em;
+    margin-top: 2em;
+    padding: .5em .2em .5em;
+    border-radius: 5px;
+}
+
+ul a {
+    max-width: 15em;
+   height: 10%;
+
+}
+
+/*Leeslijst*/
+
+.grow {
+    transform: scale(1);
+    animation: slidein 0.3s ease;
+}
+
+    @keyframes slidein {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+     transform: scale(1.5);
+  }
+
+}
+
+
+
+/* zoekform*/
+
+.zoekform {
+    margin-bottom: 1.5em;
+    margin-left: 2em;
+
+}
+
+#zoek {
+    width: 13em;
+    height: 2.5em;
+    border-radius: 7px;
+    border-color: #2800a0;
+}
+
+input {
+    color: white;
+    opacity: .85;
+    font-family: "Nexa bold", sans-serif;
+    font-size: 1em;
+    padding-left: 1em;
+}
+
+#submit {
+    background-color: #2800a0;
+    opacity: 1;
+    border-color: #2800a0;
+    border-radius: 4px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: .6em;
+    padding-top: .6em;
+}
+
+
+/*
+=========================
+    main
+=========================
+*/
+
+h1 {
+    margin-bottom: -1em;
+}
+/* filter*/
+
+#filter {
+    font-family: "Nexa bold", sans-serif;
+    font-size: 1em;
+    margin-left: 4.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em 6em 1em 6em;
+    position: relative;
+    border-radius: 1.25em;
+    border: none;
+    background-color: #ff3268;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    color: white;
+}
+
+legend {
+    color: #2800a0;
+    font-family: "Nexa bold", sans-serif;
+    margin-top: 1em;
+}
+
+.toggle {
+    display: none;
+}
+
+.open {
+    display: block;
+    border-style: solid;
+    border-color:  rgba(247, 247, 247, 247);
+    background-color: rgba(247, 247, 247, 247);
+    border-width: .5px;
+    color: #606060;
+    border-radius: 10px;
+    padding-top: 1em;
+    margin-top: 1em;
+    margin-right: 5em;
+    margin-left: 4.5em;
+}
+
+fieldset {
+    border: none;
+}
+
+main form {
+    font-family: "Nexa light", sans-serif;
+    font-size: 1em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+    background-color:#f3e5d8;
+
+}
+
+input[type='checkbox'] {
+    height: 1em;
+    width: 1em;
+}
+
+
+/* sorteren*/
+
+#sorteren {
+    font-family: "Nexa light", sans-serif;
+    font-size: 1em;
+    position: absolute;
+    left: 9.5em;
+    top: 24em;
+    align-content: center;
+}
+
+main form {
+    background-color: white;
+    margin-bottom: -2em;
+}
+
+/* articles*/
+
+h1 {
+    color: #2800a0;
+    text-align: center;
+    font-family: "Nexa bold", sans-serif;
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+main article img {
+    max-width: 100%;
+    max-height: 15em;
+    margin-bottom: em;
+    margin-top: 1em;
+    border-radius: .75rem;
+
+}
+
+main h2 {
+    position: absolute;
+    color: white;
+    margin-left: 2em;
+    margin-top: 2em;
+    font-family: "Nexa bold", sans-serif;
+    font-size: 1em;
+}
+
+article button {
+    position: relative;
+    left: 18em;
+    bottom: 7em;
+    padding: 1em 1.5em 1em;
+    border-radius: 1.25em;
+    border: none;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+    background-color: #ff3268;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    color: white;
+    font-family: "Nexa bold", sans-serif;
+    font-size: .75em;
+
+}
+
+article button:hover{
+    background-color: #2800a0;
+    box-shadow: inset 0 -0.1875em 0.0625em #120145;
+    transition:0.7s ease;
+}
+
+article img:nth-last-child(3){
+    position: relative;
+    left: 9em;
+    bottom: 16em;
+}
+
+article img:nth-last-child(2){
+    position: relative;
+    right: 6.5em;
+    bottom: 4.5em;
+}
+
+article img:last-child {
+    max-width: 8%;
+    position: relative;
+    left: 9em;
+    bottom: 15.7em;
+}
+
+main a {
+    color: white;
+    font-family: "Nexa bold", sans-serif;
+    text-decoration: none;
+}
+
+
+
+/* flexbox articles*/
+
+section {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    padding: .5%;
+    width: 25em;
+    height: 15em;
+    margin-top: 10px;
+    margin-bottom: 2em;
+
+}
+
+
+/*
+=========================
+  footer
+=========================
+*/
+
+footer {
+    background: rgba(247, 247, 247, 247);
+    height: 5em;
+    width: 100%;
+    margin-top: em;
+}
+
+footer>img {
+    margin-top: 1.5em;
+    margin-left: 2em;
+    max-width: 10em;
+}
+
+/*
+==============================
+nav media queries: desktop/tab
+==============================
+*/
+@media all and (min-width: 60em) {
+ul {
+  left: 75em;
+}
+
+
+
+/*
+==============================
+header media queries: tablet
+==============================
+*/
+
+@media all and (min-width: 45em) {
+    header>h2 {
+        margin-right: 20em;
+        padding: .5em .4em .4em;
+        font-size: 1.6em;
+        line-height: 1.125em;
+        opacity: 1;
+    }
+}
+
+
+/*
+==============================
+header media queries: desktop
+==============================
+*/
+
+@media all and (min-width: 60em) {
+    header {
+        height: 30em;
+        opacity: 1;
+    }
+}
+
+@media all and (min-width: 60em) {
+    header>h2 {
+        margin-right: 25em;
+        padding: .5em .5em 1em;
+        font-size: 2.5em;
+        line-height: 1.125em;
+    }
+}
+
+
+
+
+
+/*
+==============================
+zoekbalk media queries: desktop
+==============================
+*/
+
+@media all and (min-width: 60em) {
+    #zoek {
+        width: 20em;
+        height: 2.5em;
+        border-radius: 7px;
+        border-color: #2800a0;
+    }
+}
+
+
+/*
+==============================
+filter media queries: desktop
+==============================
+*/
+
+@media all and (min-width: 60em) {
+    .open {
+        display: block;
+        background-color: #f3e5d8;
+        color: #606060;
+        border-radius: 10px;
+        padding-top: 1em;
+        margin-top: 1em;
+        margin-right: 30em;
+        margin-left: 4.5em;
+    }
+}
+
+@media all and (min-width: 60em) {
+    .toggle {
+        display: block;
+        background-color:  rgba(247, 247, 247, 247);
+        color: #606060;
+        border-radius: 10px;
+        padding-top: 1em;
+        padding-left: 2em;
+        margin-top: 1em;
+        margin-right: 25em;
+        margin-left: 25em;
+    }
+}
+
+@media all and (min-width: 60em) {
+    #filter {
+      display: none;
+    }
+}
+
+/*
+==============================
+sorteren media queries: desktop
+==============================
+*/
+@media all and (min-width: 60em) {
+    #sorteren {
+    font-family: "Nexa light", sans-serif;
+    font-size: 1em;
+        top: 46.7em;
+    left: 56em;
+
+}
+
+@media all and (min-width: 60em) {
+    h1 {
+    margin-bottom: 0.025em;
+
+}
+
+/*
+==============================
+filter media queries: tablet
+==============================
+*/
+@media all and (min-width: 45em) {
+    #filter {
+    font-family: "Nexa bold", sans-serif;
+    font-size: 1.2em;
+    margin-top: 1em;
+    padding: 1em 7em 1em 7em;
+    position: relative;
+    border-radius: 1.25em;
+    border: none;
+    background-color: #ff3268;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    color: white;
+
+
+
+    }
+}
+
